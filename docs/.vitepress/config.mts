@@ -65,7 +65,6 @@ export default defineConfig({
     darkModeSwitchLabel: '테마',
     sidebarMenuLabel: '목차',
     returnToTopLabel: '맨 위로',
-    externalLinkIcon: true,
-    socialLinks: []
+    externalLinkIcon: true
   }
 })

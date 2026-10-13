@@ -39,6 +39,17 @@
 
 .vp-doc mjx-container { overflow-x: auto; overflow-y: hidden; padding: .35rem 0; }
 
+/* 테마 전환 스위치를 모든 너비에서 내비게이션 바에 노출.
+   기본 테마는 1280px 미만에서 스위치를 '더보기(…)' 메뉴·모바일 메뉴로 옮긴다. */
+.VPNavBar .content-body .VPNavBarAppearance { display: flex; align-items: center; }
+.VPNavBar .content-body .VPNavBarExtra { display: none; }
+.VPNavScreen .VPNavScreenAppearance { display: none; }
+
+@media (max-width: 767px) {
+  /* 모바일에서는 메뉴가 숨겨지므로 스위치 앞 구분선도 숨김 */
+  .VPNavBar .content-body .VPNavBarAppearance::before { display: none; }
+}
+
 @media (max-width: 640px) {
   .VPHomeHero .name { font-size: 42px; }
   .vp-doc img { border-radius: 7px; }
