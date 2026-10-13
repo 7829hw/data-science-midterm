@@ -1,0 +1,22 @@
+services:
+  # 개발 서버: docker compose up
+  dev:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./docs:/app/docs
+    environment:
+      # Windows/WSL 등 bind mount에서 파일 변경 감지가 안 될 때를 대비
+      CHOKIDAR_USEPOLLING: "true"
+
+  # 배포용 정적 빌드 + nginx: docker compose --profile prod up --build
+  prod:
+    profiles: [prod]
+    build:
+      context: .
+      target: prod
+    ports:
+      - "8080:80"
