@@ -7,8 +7,8 @@
   --vp-home-hero-name-background: linear-gradient(120deg, #3157d5 15%, #7b4fd8 85%);
   --vp-home-hero-image-background-image: radial-gradient(circle at 50% 50%, rgba(49, 87, 213, .22), transparent 68%);
   --vp-home-hero-image-filter: blur(34px);
-  --vp-font-family-base: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
-  --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --vp-font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", "Pretendard Variable", Pretendard, ui-monospace, Consolas, monospace;
 }
 
 .VPNavBarTitle .title { font-weight: 760; }
